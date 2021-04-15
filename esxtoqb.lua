@@ -88,13 +88,62 @@ QBCore.Functions.TriggerCallback()
 ESX.ExecuteSql() --(ghmattimysql)
 MySQL.Async.execute()
 
-QBCore.Functions.ExecuteSql()
+exports['ghmattimysql']:execute() QBCore.Functions.ExecuteSql()
 ---------------------------------------------------------------------
 RegisterCommand --(RegisterCommand qbcore'da da çalışır.)
 
 QBCore.Commands.Add()
 ---------------------------------------------------------------------
+esx:onPlayerSpawn
 
-Eklenicek
+QBCore:Client:OnPlayerLoaded
+---------------------------------------------------------------------
+playerSpawned
 
+QBCore:Client:OnPlayerLoaded --(spawnmanager compatibility)
+---------------------------------------------------------------------
+esx:useItem 
+
+QBCore:Server:UseItem
+---------------------------------------------------------------------
+MySQL.Async.fetchAll()
+
+exports['ghmattimysql']:execute() or QBCore.Functions.ExecuteSql()
+---------------------------------------------------------------------
+MySQL.Async.fetchScalar()
+
+exports['ghmattimysql']:scalar() or QBCore.Functions.ExecuteSql()
+---------------------------------------------------------------------
+xPlayer.removeWeaponComponent
+
+xPlayer.Functions.RemoveItem
+---------------------------------------------------------------------
+xPlayer.setAccountMoney
+
+xPlayer.Functions.SetMoney
+---------------------------------------------------------------------
+xPlayer.setCoords
+
+xPlayer.setCoords
+---------------------------------------------------------------------
+xPlayer.setJob
+
+xPlayer.Functions.SetJob
+---------------------------------------------------------------------
+xPlayer.setMaxWeight
+
+None (It is set in qb-core config) 
+---------------------------------------------------------------------
+xPlayer.setMoney
+
+xPlayer.Functions.SetMoney
+---------------------------------------------------------------------
+xPlayer.showHelpNotification
+
+TriggerClientEvent('QBCore:Notify')
+---------------------------------------------------------------------
+xPlayer.showNotification
+
+TriggerClientEvent('QBCore:Notify')
+---------------------------------------------------------------------
 
