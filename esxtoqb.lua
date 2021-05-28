@@ -28,8 +28,8 @@ AddEventHandler('QBCore:Client:OnPlayerLoaded',
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
 
-RegisterNetEvent('QBCore:Client:OnJobUptade')
-AddEventHandler('QBCore:Client:OnJobUptade', 
+RegisterNetEvent('QBCore:Client:OnJobUpdate')
+AddEventHandler('QBCore:Client:OnJobUpdate', 
 ---------------------------------------------------------------------
 DrawText3D(1, 1, 1, 'Örnek')
 
